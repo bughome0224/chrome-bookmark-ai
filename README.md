@@ -1,6 +1,6 @@
 # 智能收藏夹
 
-[![GitHub Stars](https://img.shields.io/github/stars/bughome0224/chrome-bookmark-ai?style=flat-square&color=3b82f6)](https://github.com/bughome0224/chrome-bookmark-ai/stargazers)
+[![Star](https://img.shields.io/github/stars/bughome0224/chrome-bookmark-ai?style=social)](https://github.com/bughome0224/chrome-bookmark-ai/stargazers)
 [![GitHub Release](https://img.shields.io/github/v/release/bughome0224/chrome-bookmark-ai?style=flat-square&color=16a34a)](https://github.com/bughome0224/chrome-bookmark-ai/releases)
 [![License](https://img.shields.io/badge/license-MIT-8b5cf6?style=flat-square)](LICENSE)
 
@@ -115,3 +115,7 @@ chrome-bookmark-ai/
   ├─ Dialog 更新：AI 推荐列表 / 新建建议 / 已收藏提示
   └─ 用户确认 → service-worker.js 创建书签（含自动新建文件夹兜底）
 ```
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=bughome0224/chrome-bookmark-ai&type=Date)](https://star-history.com/#bughome0224/chrome-bookmark-ai&Date)
