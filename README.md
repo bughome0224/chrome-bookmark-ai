@@ -1,5 +1,9 @@
 # 智能收藏夹
 
+[![GitHub Stars](https://img.shields.io/github/stars/bughome0224/chrome-bookmark-ai?style=flat-square&color=3b82f6)](https://github.com/bughome0224/chrome-bookmark-ai/stargazers)
+[![GitHub Release](https://img.shields.io/github/v/release/bughome0224/chrome-bookmark-ai?style=flat-square&color=16a34a)](https://github.com/bughome0224/chrome-bookmark-ai/releases)
+[![License](https://img.shields.io/badge/license-MIT-8b5cf6?style=flat-square)](LICENSE)
+
 AI 驱动的 Chrome 书签自动分类扩展。收藏网页时，AI 分析页面内容，自动推荐最合适的存放文件夹。
 
 ## 功能
