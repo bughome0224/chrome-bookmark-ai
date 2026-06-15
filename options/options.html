@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>智能收藏夹 - 设置</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <div class="logo">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2">
+          <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+        </svg>
+      </div>
+      <div>
+        <h1>智能收藏夹</h1>
+        <p class="subtitle">AI 驱动的书签自动分类</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>AI 服务配置</h2>
+
+        <div class="form-group">
+          <label for="provider">API 提供商</label>
+          <select id="provider"></select>
+        </div>
+
+        <div class="form-group">
+          <label for="apiKey">API Key</label>
+          <input type="password" id="apiKey" placeholder="输入你的 API Key..." autocomplete="off">
+          <p class="hint">你的 API Key 仅存储在本地浏览器中，不会上传到任何第三方。</p>
+        </div>
+
+        <div class="form-group">
+          <label for="model">模型</label>
+          <div class="model-row">
+            <select id="model"></select>
+            <button class="btn-refresh js-refresh-models" title="从 API 获取最新模型列表">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+            </button>
+          </div>
+          <p class="hint js-model-hint">模型列表来自本地配置，点击刷新按钮从 API 拉取最新模型。</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>使用说明</h2>
+        <div class="instructions">
+          <div class="step">
+            <span class="step-num">1</span>
+            <div>
+              <strong>配置 API Key</strong>
+              <p>选择 AI 服务商，填入对应的 API Key 并保存。</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">2</span>
+            <div>
+              <strong>收藏网页</strong>
+              <p>在任意网页按 <kbd>Ctrl+D</kbd>（Mac: <kbd>Cmd+D</kbd>），插件会弹出智能分类窗口。</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">3</span>
+            <div>
+              <strong>选择或新建文件夹</strong>
+              <p>AI 会推荐最匹配的现有文件夹，也可以一键创建新文件夹。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="save-bar">
+      <span class="save-status js-status"></span>
+      <button class="btn-save js-save">保存设置</button>
+    </div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

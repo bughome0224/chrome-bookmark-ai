@@ -1,0 +1,228 @@
+/* ===== 扩展弹窗样式 ===== */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+.hidden { display: none !important; }
+
+body {
+  width: 360px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: #ffffff;
+  color: #1d1d1f;
+}
+
+.popup-container {
+  padding: 16px;
+}
+
+/* Header */
+.popup-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e5ea;
+}
+
+.popup-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.popup-header h1 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.popup-subtitle {
+  font-size: 11px;
+  color: #86868b;
+}
+
+/* Section */
+.popup-section {
+  margin-bottom: 14px;
+}
+
+.popup-section h2 {
+  font-size: 11px;
+  font-weight: 500;
+  color: #6e6e73;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-bottom: 6px;
+}
+
+/* Current Page */
+.current-page {
+  background: #f5f5f7;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.page-title {
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 2px;
+}
+
+.page-url {
+  font-size: 11px;
+  color: #86868b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.page-loading {
+  font-size: 12px;
+  color: #86868b;
+}
+
+/* Button */
+.btn-primary {
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  transition: background 0.15s;
+}
+
+.btn-primary:hover { background: #2563eb; }
+.btn-primary:active { transform: scale(0.98); }
+.btn-primary:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* No API Key Hint */
+.no-api-hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #991b1b;
+  line-height: 1.5;
+}
+
+.no-api-hint a {
+  color: #dc2626;
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.no-api-icon {
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+/* Recent List */
+.recent-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.recent-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.recent-item:hover {
+  background: #f5f5f7;
+}
+
+.recent-item-icon {
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.recent-item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.recent-item-title {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recent-item-folder {
+  font-size: 10px;
+  color: #86868b;
+}
+
+.recent-empty {
+  font-size: 12px;
+  color: #86868b;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Footer */
+.popup-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 1px solid #e5e5ea;
+  margin-top: 12px;
+}
+
+.popup-footer a {
+  font-size: 12px;
+  color: #3b82f6;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  body { background: #1c1c1e; color: #f5f5f7; }
+  .popup-header { border-color: #3a3a3c; }
+  .popup-subtitle { color: #98989d; }
+  .popup-section h2 { color: #98989d; }
+  .current-page { background: #2c2c2e; }
+  .page-url { color: #98989d; }
+  .page-loading { color: #98989d; }
+  .recent-item:hover { background: #2c2c2e; }
+  .recent-item-folder { color: #98989d; }
+  .recent-empty { color: #98989d; }
+  .popup-footer { border-color: #3a3a3c; }
+  .no-api-hint { background: #450a0a; border-color: #7f1d1d; color: #fca5a5; }
+  .no-api-hint a { color: #f87171; }
+}

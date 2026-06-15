@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>智能收藏夹</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <div class="popup-logo">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2">
+          <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+        </svg>
+      </div>
+      <div>
+        <h1>智能收藏夹</h1>
+        <p class="popup-subtitle">AI 书签自动分类</p>
+      </div>
+    </header>
+
+    <main>
+      <!-- 当前页面 -->
+      <section class="popup-section">
+        <h2>当前页面</h2>
+        <div class="current-page js-current-page">
+          <div class="page-loading">正在获取页面信息...</div>
+        </div>
+      </section>
+
+      <!-- 操作按钮 -->
+      <button class="btn-primary js-smart-bookmark">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+          <polyline points="12 8 12 15"/>
+          <polyline points="9 11 12 8 15 11"/>
+        </svg>
+        智能收藏此页面
+      </button>
+
+      <div class="no-api-hint hidden js-no-api-hint">
+        <span class="no-api-icon">⚙️</span>
+        <span>请先<a href="#" class="js-open-options-inline">配置 API Key</a>后再使用智能收藏</span>
+      </div>
+
+      <!-- 最近收藏 -->
+      <section class="popup-section">
+        <h2>最近收藏</h2>
+        <ul class="recent-list js-recent-list">
+          <li class="recent-empty">暂无收藏记录</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="popup-footer">
+      <a href="#" class="js-open-options">设置</a>
+      <a href="#" class="js-open-bookmarks">管理收藏夹</a>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "providers": [
+    {
+      "id": "anthropic",
+      "name": "Anthropic (Claude)",
+      "apiUrl": "https://api.anthropic.com/v1/messages",
+      "apiFormat": "anthropic",
+      "modelsEndpoint": null,
+      "models": [
+        { "id": "claude-sonnet-4-6", "name": "Claude Sonnet 4.6（推荐）" },
+        { "id": "claude-haiku-4-5-20251001", "name": "Claude Haiku 4.5（更快更省）" },
+        { "id": "claude-opus-4-7", "name": "Claude Opus 4.7（最强）" }
+      ]
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI (GPT)",
+      "apiUrl": "https://api.openai.com/v1/chat/completions",
+      "apiFormat": "openai",
+      "modelsEndpoint": "https://api.openai.com/v1/models",
+      "models": [
+        { "id": "gpt-4o-mini", "name": "GPT-4o Mini（推荐）" },
+        { "id": "gpt-4o", "name": "GPT-4o（更强）" }
+      ]
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "apiUrl": "https://api.deepseek.com/v1/chat/completions",
+      "apiFormat": "openai",
+      "modelsEndpoint": "https://api.deepseek.com/models",
+      "models": [
+        { "id": "deepseek-v4-pro", "name": "DeepSeek-V4-Pro（推荐）" },
+        { "id": "deepseek-v4-flash", "name": "DeepSeek-V4-Flash（更快更省）" }
+      ]
+    }
+  ]
+}
